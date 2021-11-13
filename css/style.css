@@ -3,6 +3,11 @@ Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'OpenSans', sans-serif;
@@ -16,7 +21,7 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
@@ -70,10 +75,118 @@ a:active { /* selected link */
 }
 
 .button:hover {
-  opacity: 0.6; /* Reduces the opacity of the button to 80% */
+  opacity: 0.6;
   text-decoration: none;
 }
 
 .button:active {
   opacity: 0.7;
+}
+
+header {
+  background-color: #e5e2f7;
+  padding: 0px;
+  border: 10px solid #ffffff;
+  border-bottom: 0px solid #3e2ab4;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.5);
+  display: inline-block;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a{
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1f1f1f;
+}
+
+nav > ul > li > a:visited{
+  color: #1c1947;
+}
+
+main {
+  padding-top: 313px;
+}
+
+#contact > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact > ul > li {
+  display: inline-block;
+}
+
+#contact > ul > li > a{
+  padding: 0 15px;
+}
+
+/*specific layout styling*/
+
+.container {
+  border: 10px solid white;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 150px;
+  text-align: center;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+#projects .row {
+  margin: 25px 0;
+}
+
+#hero{
+  background-color: #e5e2f7;
+  padding: 10px;
+  border: 10px solid #ffffff;
+  border-top: 0px solid #ffffff;
+  display: inline-block;
+  width: 100%;
+
+}
+#hero h1{
+  text-align: center;
+  margin: 0;
+
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icons {
+  width: 150px;
+  max-width: 300px;
+  height: auto;
 }
