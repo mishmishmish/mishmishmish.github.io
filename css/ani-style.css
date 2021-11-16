@@ -1,0 +1,61 @@
+.berlin-ils{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes sun-color-change {
+ 0% {fill: #edc655;}
+  50% {fill:#e5e2f7;}
+  100% {fill: #f76414;}  
+}
+.sun{
+animation: sun-color-change 10s infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(50px,50px);}
+  to {transform: translate(800px,50px);}
+}
+
+.cloud-front{
+    animation: cloud-move 45s infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back{
+animation: cloud-move-reverse 45s infinite alternate linear;
+}
+
+/*cat animation*/
+
+@keyframes cat-left-ear-rotate {
+  from{transform: rotate(3deg);}
+  to{transform: rotate(-8deg);}
+}
+#cat-ear-left{
+  animation: cat-left-ear-rotate 2s infinite alternate linear;
+  transform-origin: 350px 430px;
+}
+
+@keyframes cat-right-ear-rotate {
+  from{transform: rotate(3deg);}
+  to{transform: rotate(-8deg);}
+}
+#cat_ear_right{
+  animation: cat-right-ear-rotate 2s infinite alternate linear;
+  transform-origin: 350px 430px;
+  animation-delay: 2s;
+}
+
+@keyframes leaf-move-scale {
+   from{transform: rotate(2deg);}
+  to{transform: rotate(10deg);} 
+}
+
+#leaf{
+  animation: leaf-move-scale 5s infinite alternate ease;
+  transform-origin: 500px;
+}
