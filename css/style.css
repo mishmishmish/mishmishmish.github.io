@@ -48,7 +48,7 @@ img {
 
 a {
     color: #001aaf;
-    text-decoration: bold underline;
+    text-decoration: underline;
 }
 
 a:visited {
@@ -102,10 +102,14 @@ header {
 
 .logo {
     text-align: center;
-    padding: 0;
-    min-width: 200px;
-    max-width: 350px;
+    padding: 20px 0 0 0;
+    max-width: 150px;
     display: inline-block;
+}
+
+.logo svg, .logo a {
+    width: 100%;
+    display: block;
 }
 
 @keyframes sprout-wiggle{
@@ -144,7 +148,7 @@ nav>ul>li>a:visited {
 }
 
 main {
-    padding-top: 306px;
+    padding-top: 275px;
 }
 
 #contact>ul {
@@ -161,6 +165,11 @@ main {
     padding: 0 15px;
 }
 
+#contact>ul>li img{
+    width: 30px;
+    display: inline-block;
+}
+
 
 /*specific layout styling*/
 
@@ -171,10 +180,6 @@ main {
 
 .center {
     text-align: center;
-}
-
-#projects .row {
-    border: 25px solid white;
 }
 
 #hero {
@@ -218,6 +223,7 @@ main {
 
 [class*="col-"] {
     float: left;
+    margin-bottom: 20px;
 }
 
 .row::after {
@@ -226,6 +232,9 @@ main {
     display: table;
 }
 
+footer {
+    text-align: center;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -250,13 +259,14 @@ Medium devices (640px and larger)
         column-width: 0px;
         column-count: 3;
         column-gap: 20px;
-        bordre: 10px solid white;
+        border: 10px solid white;
     }
     .logo {
         float: left;
+        padding-bottom: 20px;
     }
     main {
-        padding-top: 219px;
+        padding-top: 200px;
     }
 }
 
