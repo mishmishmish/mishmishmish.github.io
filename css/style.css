@@ -155,15 +155,30 @@ nav>ul>li>a:visited {
   position: relative;
 }
 
-.navtoggle li .icon{
-    position: relative;
-    right: 0;
-    top: 2px;  
-    font-size: 20px;
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+  text-align: center;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: .05px solid #3e2ab4;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 15px;
+  top: 140px;
+  width: 50px;
+  font-size: 20px;
 }
 
 main {
-    padding-top: 275px;
+    padding-top: 214px;
 }
 
 #contact>ul {
@@ -173,7 +188,7 @@ main {
 
 #contact>ul>li {
     display: inline-block;
-    float:inline-start;
+    float: inline-start;
 }
 
 #contact>ul>li>a {
