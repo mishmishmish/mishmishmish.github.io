@@ -188,7 +188,6 @@ main {
 
 #contact>ul>li {
     display: inline-block;
-    float: inline-start;
 }
 
 #contact>ul>li>a {
@@ -264,7 +263,9 @@ main {
 
 footer {
     text-align: center;
+    text-align: -moz-center;
 }
+
 
 /* ==============================
 Medium devices (640px and larger)
